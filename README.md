@@ -70,7 +70,26 @@ bee run
 ```
 
 ## 界面截图
+**登录**
+![](./uploads/login.jpeg)
 
+**首页**
+![](./uploads/home.jpeg)
+
+**文章列表**
+![](./uploads/blog-list.jpeg)
+
+**教程分类**
+![](./uploads/book-category.jpeg)
+
+**教程列表**
+![](./uploads/book-list.jpeg)
+
+**搜索结果**
+![](./uploads/search.jpeg)
+
+**关于我们**
+![](./uploads/about.jpeg)
 
 ## 版权申明
 
