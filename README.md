@@ -30,7 +30,16 @@ OneDoc 基于 [MinDoc](https://github.com/mindoc-org/mindoc) 二次开发，主�
 
 ## 安装及运行
 ### 安装
-首先，根据 [MinDoc](https://github.com/mindoc-org/mindoc) 官网的安装步骤进行安装。
+**安装步骤如下：**
+第一步，下载或克隆仓库源码到指定项目目录
+```
+git clone https://
+```
+
+第一步，根据 [MinDoc](https://github.com/mindoc-org/mindoc) 官方的安装教程进行安装。
+
+第二步，更新数据库表结构
+表 `md_itemsets` 增加 `img_url`
 
 
 ### 运行
