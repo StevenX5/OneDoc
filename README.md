@@ -7,6 +7,7 @@ OneDoc 适用于以下应用场景：
 + 项目技术资料管理
 + 企业文档资料管理
 + 互联网博客和在线教程网站
++ ......
 
 **演示站点**
 
@@ -37,8 +38,7 @@ OneDoc 基于 [MinDoc](https://github.com/mindoc-org/mindoc) 二次开发，主�
 
 ## 安装与运行
 ### 安装
-第一步，下载或克隆仓库源码到指定的项目目录
-
+第一步，下载或克隆仓库源码到指定的项目目录，并将 static.rar 静态文件的压缩包解压缩到项目根目录。
 ```
 git clone https://github.com/StevenX5/OneDoc.git
 ```
