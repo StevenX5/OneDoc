@@ -12,6 +12,12 @@ OneDoc 适用于以下应用场景：
 
 *部署中，即将上线。。。*
 
+## 项目技术栈
++ [Beego](https://github.com/beego/beego) （go语言 web 项目框架）
++ [Boostrap](https://getbootstrap.com/) （前端页面框架）
++ [MySQL 5.6](https://www.mysql.com/) （关系数据库）
++ ......
+
 ## 更新说明
 OneDoc 基于 [MinDoc](https://github.com/mindoc-org/mindoc) 二次开发，主要更新了以下内容：
 - 将主菜单中的项目空间栏目改为教程，并更新了部分相关的文字描述
@@ -62,7 +68,6 @@ bee run
 # 或
 ./OneDoc      # Linux 环境
 ```
-
 
 ## 界面截图
 
