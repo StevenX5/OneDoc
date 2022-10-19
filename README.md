@@ -92,6 +92,9 @@ bee run
 **关于我们**
 ![](./uploads/about.jpeg)
 
+## 关注我们
+欢迎关注我们，如果您在使用中有任何问题，请在 Github 上报告 issue 给我们。
+
 ## 赞助我们
 
 
