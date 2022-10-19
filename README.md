@@ -33,6 +33,7 @@ OneDoc 基于 [MinDoc](https://github.com/mindoc-org/mindoc) 二次开发，主�
 - 增加了教程（原项目空间）分类图片
 - 增加了文章封面图片
 - 增加了文章阅读次数
+- 增加了关于我们等静态页面
 
 ## 安装与运行
 ### 安装
@@ -90,9 +91,6 @@ bee run
 
 **关于我们**
 ![](./uploads/about.jpeg)
-
-## 版权申明
-
 
 ## 赞助我们
 
