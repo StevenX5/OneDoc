@@ -52,7 +52,7 @@ imgurl	varchar(500)
 ```
 2. 更新表 `md_blogs`，增加 `cover` 和 `view_count` 字段
 ```
-cover	varchar(1000)
+cover	      varchar(1000)
 view_count	int		default(0)
 ```
 
