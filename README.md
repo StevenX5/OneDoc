@@ -95,6 +95,5 @@ bee run
 ## 关注我们
 欢迎关注我们，如果您在使用中有任何问题，请在 Github 上报告 [issue](https://github.com/StevenX5/OneDoc/issues) 给我们。
 
-## 赞助我们
-
-
+## 联系我们
+QQ：1029993198 (zh***g)
