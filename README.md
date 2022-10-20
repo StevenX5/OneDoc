@@ -1,7 +1,9 @@
 # OneDoc 简介
-OneDoc 是一款轻量级的企业（项目）文档协同管理系统。基于 [MinDoc](https://github.com/mindoc-org/mindoc) 二次开发。
+OneDoc 是一款轻量级的企业（项目）文档协同管理系统。
 
 OneDoc 可以用来储存日常接口文档，数据库字典，手册说明等文档。内置项目管理，用户管理，权限管理等功能，能够满足大部分中小团队的文档管理需求。
+
+OneDoc 基于 [MinDoc](https://github.com/mindoc-org/mindoc) 二次开发。重写了前端页面样式，并更新了部分功能。
 
 OneDoc 适用于以下应用场景：
 + 项目技术资料管理
