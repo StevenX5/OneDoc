@@ -216,8 +216,8 @@ func init() {
 	web.Router("/manage/blogs/setting/?:id", &controllers.BlogController{}, "*:ManageSetting")
 	web.Router("/manage/blogs/edit/?:id", &controllers.BlogController{}, "*:ManageEdit")
 	web.Router("/manage/blogs/delete", &controllers.BlogController{}, "post:ManageDelete")
-	//web.Router("/manage/blogs/upload", &controllers.BlogController{}, "post:Upload")
-	web.Router("/manage/blogs/upload", &controllers.BlogController{}, "post:UploadCover")
+	web.Router("/manage/blogs/setting/upload", &controllers.BlogController{}, "post:Upload")
+	web.Router("/manage/blogs/edit/upload", &controllers.BlogController{}, "post:UploadCover")
 	web.Router("/manage/blogs/attach/:id", &controllers.BlogController{}, "post:RemoveAttachment")
 
 	//读文章的路由
