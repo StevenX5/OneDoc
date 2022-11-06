@@ -13,7 +13,7 @@ OneDoc 适用于以下应用场景：
 
 **演示站点**
 
-*部署中，即将上线。。。*
+[https://www.benmo.cc](https://www.benmo.cc) （区块链中文社区）
 
 ## 项目技术栈
 + [Beego](https://github.com/beego/beego) （go语言 web 项目框架）
