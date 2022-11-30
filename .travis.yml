@@ -1,0 +1,46 @@
+os: linux
+dist: focal
+
+language: go
+go:
+  - "1.18.1"
+
+arch:
+- amd64
+
+env:
+- GO111MODULE=on CGO_ENABLED=1
+
+install:
+  - go mod tidy -v
+
+before_install:
+  - whereis gcc
+  - go env
+
+script:
+  - go build -o mindoc_linux_amd64 -ldflags "-w"
+  - cp conf/app.conf.example conf/app.conf
+  - ./mindoc_linux_amd64 version
+  - rm conf/app.conf
+
+before_deploy:
+  - go mod tidy -v && GOARCH=amd64 GOOS=linux go build -v -o mindoc_linux_amd64 -ldflags="-w -X 'github.com/mindoc-org/mindoc/conf.VERSION=$TRAVIS_TAG' -X 'github.com/mindoc-org/mindoc/conf.BUILD_TIME=`date`' -X 'conf.GO_VERSION=`go version`'"
+  # remove files
+  - rm appveyor.yml docker-compose.yml Dockerfile .travis.yml .gitattributes .gitignore go.mod go.sum main.go README.md simsun.ttc start.sh sync_host.sh build_amd64.sh build_musl_amd64.sh
+  # remove dirs
+  - rm -rf cache commands controllers converter .git .github graphics mail models routers utils runtime
+  - ls -alh
+  - cp conf/app.conf.example conf/app.conf
+  - zip -r mindoc_linux_amd64.zip conf static uploads views lib mindoc_linux_amd64 LICENSE.md
+
+deploy:
+  provider: releases
+  token: $CI_USER_TOKEN
+  cleanup: true
+  overwrite: true
+  file:
+    - mindoc_linux_amd64.zip
+  on:
+    tags: true
+    branch: master
